@@ -1,0 +1,25 @@
+<%- include("templates/encabezado") %>
+<%- include("templates/menu") %>
+
+<div>
+    <h1>Modificar Cuenta</h1>
+</div>
+<div>
+    <form action="/modificarUsuario" method="post" id="editUsu">
+        <div>
+            <input type="hidden" name="id_alu" id="id_alu" value=<%= alumno.id_alu%>>
+            <input type="text" name="usuario_alu" id="usuario_alu" placeholder="Usuario" value=<%= alumno.usuario_alu%>>
+            <span> mensajeUsuario</span>
+        </div>
+        <div>
+            <input type="text" name="password_alu" id="password_alu" placeholder="Password" value=<%= alumno.password_alu %>>
+        <span mensajePassword></span>
+        </div>
+        <div>
+            <button type="submit">Modificar usuario</button>
+        </div>
+    </form>
+</div>
+
+
+<%- include("templates/pie") %>

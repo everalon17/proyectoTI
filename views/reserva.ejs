@@ -1,0 +1,175 @@
+<%- include("templates/encabezado") %>
+    <%- include("templates/menu") %>
+
+        <div class="nombreU">
+            MARVIN ABIGAEL PEREZ LOPEZ
+        </div>
+
+        <div class="infoU">
+            <div class="infoU1">Nombre: <br>
+                <label class="infoU2">MARVIN ABIGAEL PEREZ<br>LOPEZ</label>
+            </div>
+            <div class="infoU1">
+                Carrera/Unidad: <br>
+                <label class="infoU2">Tecnologías de la Información <br> Área Desarrollo de Software <br>Multiplataforma
+                    UTSJR</label>
+            </div>
+            <div class="infoU1">
+                Grupo: <br>
+                <label class="infoU2">TI02SM-22</label>
+            </div>
+            <div class="infoU1">
+                Grado: <br>
+                <label class="infoU2">3</label>
+            </div>
+            <div class="infoU1">
+                Expediente: <br>
+                <label class="infoU2">2022143104</label>
+            </div>
+            <div class="infoU1">
+                Img
+                <label class="infoU2"></label>
+            </div>
+        </div>
+
+        <form action="/reserva" method="post">
+            <div class="tabla1">
+                <table class="lab">
+                    <tr>
+                        <th colspan="2">RESERVA DE LABORATORIOS</th>
+                    </tr>
+                    <tr>
+                        <td>LABORATORIO 1</td>
+                        <td id="lab1"><a href="#" onclick="mostrarVentana('Laboratorio 1')">+info</a></td>
+                    </tr>
+                    <tr>
+                        <td>LABORATORIO 2</td>
+                        <td id="lab2"><a href="#" onclick="mostrarVentana('Laboratorio 2')">+info</a></td>
+                    </tr>
+                    <tr>
+                        <td>LABORATORIO 3</td>
+                        <td id="lab3"><a href="#" onclick="mostrarVentana('Laboratorio 3')">+info</a></td>
+                    </tr>
+                    <tr>
+                        <td>LABORATORIO 4</td>
+                        <td id="lab4"><a href="#" onclick="mostrarVentana('Laboratorio 4')">+info</a></td>
+                    </tr>
+                    <input type="hidden" name="lab_r" id="lab_r" value="">
+                </table>
+            </div>
+
+            <div class="separador">Detalles</div>
+            <div class="contenedor"></div>
+            
+            <div class="fondoOpaco" id="fondoOpaco" onclick="cerrarVentana()"></div>
+            
+            <div class="ventanaEmergente" id="ventanaLaboratorio">
+                <button type="button" class="cerrarBoton" onclick="cerrarVentana()">Cerrar</button>
+                <div class="cabezaVentana1">
+                    <div class="imgVentana1">
+                        <img src="/web/imagenes/logoo.png" alt="logo Unidad" class="imgV1">
+                        <div class="textoV1">
+                            <h2>Universidad Tecnologica de San Juan del Rio</h2>
+                            <h3>Horario de disponibilidad del laboratorios</h3>
+                        </div>
+                    </div>
+                    <div class="DTV1">
+                        <table class="tablaVentana1">
+                            <tr>
+                                <th colspan="6" id="labs">LABORATORIO</th>
+                            </tr>
+                            <tr>
+                                <td>Hora</td>
+                                <td>Lunes</td>
+                                <td>Martes</td>
+                                <td>Miercoles</td>
+                                <td>Jueves</td>
+                                <td>Viernes</td>
+                            </tr>
+                            <tr>
+                                <td>7:00 - 8:00</td>
+                                <td>Disponible</td>
+                                <td>Disponible</td>
+                                <td>Disponible</td>
+                                <td>Disponible</td>
+                                <td>Disponible</td>
+                            </tr>
+                            <tr>
+                                <td>8:00 - 9:00</td>
+                                <td>Disponible</td>
+                                <td>Disponible</td>
+                                <td>Disponible</td>
+                                <td>Disponible</td>
+                                <td>Disponible</td>
+                            </tr>
+                            <tr>
+                                <td>9:00 - 10:00</td>
+                                <td>Disponible</td>
+                                <td>Disponible</td>
+                                <td>Disponible</td>
+                                <td>Disponible</td>
+                                <td>Disponible</td>
+                            </tr>
+                            <tr>
+                                <td>10:00 - 11:00</td>
+                                <td>Disponible</td>
+                                <td>Disponible</td>
+                                <td>Disponible</td>
+                                <td>Disponible</td>
+                                <td>Disponible</td>
+                            </tr>
+                            <tr>
+                                <td>11:00 - 12:00</td>
+                                <td>Disponible</td>
+                                <td>Disponible</td>
+                                <td>Disponible</td>
+                                <td>Disponible</td>
+                                <td>Disponible</td>
+                            </tr>
+                            <tr>
+                                <td>12:00 - 13:00</td>
+                                <td>Disponible</td>
+                                <td>Disponible</td>
+                                <td>Disponible</td>
+                                <td>Disponible</td>
+                                <td>Disponible</td>
+                            </tr>
+                            <tr>
+                                <td>13:00 - 14:00</td>
+                                <td>Disponible</td>
+                                <td>Disponible</td>
+                                <td>Disponible</td>
+                                <td>Disponible</td>
+                                <td>Disponible</td>
+                            </tr>
+                            <tr>
+                                <td>14:00 - 15:00</td>
+                                <td>Disponible</td>
+                                <td>Disponible</td>
+                                <td>Disponible</td>
+                                <td>Disponible</td>
+                                <td>Disponible</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <p>Realiza reserva</p>
+                        <select name="hor_r" id="hor_r">
+                            <option value="7:00">7:00 - 8:00</option>
+                            <option value="8:00">8:00 - 9:00</option>
+                            <option value="9:00">9:00 - 10:00</option>
+                            <option value="10:00">10:00 - 11:00</option>
+                            <option value="11:00">11:00 - 12:00</option>
+                            <option value="12:00">12:00 - 13:00</option>
+                            <option value="13:00">13:00 - 14:00</option>
+                            <option value="14:00">14:00 - 15:00</option>
+                        </select>
+                        <div>
+                            <button type="submit">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+<%- include("templates/pie") %>

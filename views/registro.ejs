@@ -1,0 +1,55 @@
+<%- include("templates/encabezado") %>
+    <div id="fondo" class="fondo">
+
+        <div id="logo" class="logo">
+            <img src="/web/imagenes/Logo2.png">
+        </div>
+        <div id="forma" class="forma">
+            <h1>Registro Lobo</h1>
+            <br>
+            <form action="/registro" method="post" id="registro">
+                <div>
+                    <img src="/web/imagenes/registro.jpg" width="200px">
+                </div>
+                <div>
+                    <p>Usuario</p>
+                    <input type="text" name="usuario_alu" id="usuario_alu" autofocus>
+                    <span class="mensajeU" id="mensajeU"></span>
+                </div>
+                <div>
+                    <p>Contraseña</p>
+                    <input type="password" name="password_alu" id="password_alu">
+                    <span class="mensajeP" id="mensajeP"></span>
+                </div>
+                <div>
+                    <p>Grupo</p>
+                    <input type="text" name="grupo_alu" id="grupo_alu">
+                    <span class="mensajeG" id="mensajeG"></span>
+                </div>
+                <div>
+                    <p>Nombre completo</p>
+                    <input type="text" name="nom_alu" id="nom_alu">
+                    <span class="mensajeN" id="mensajeN"></span>
+                </div>
+                <div>
+                    <p>Tipo de cuenta</p>
+                    <select name="tip_cuenta" id="tip_cuenta">
+                        <option>Selecciona una cuenta</option>
+                        <option value="usuario">usuario</option>
+                        <option value="admin almacen">admin almacen</option>
+                        <option value="admin labs">admin labs</option>
+                    </select>
+                    <div id="permiso" style="display: none;">
+                        <p>clave para cuenta admin</p>
+                        <input type="text" class="pin" id="pin">
+                        <span class="mensajePI" id="mensajePI"></span>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <button type="submit" id="btnReg">Regristrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <%- include("templates/pie") %>

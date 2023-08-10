@@ -1,0 +1,27 @@
+<%- include("templates/encabezado") %>
+<%- include("templates/menu") %>
+
+<h1>RESERVA REALIZADA</h1>
+<table id="realizada" class="realizada">
+    <thead>
+        <tr>
+            <th id="r1" class="r1">Folio</th>
+            <th id="r1" class="r1">Laboratorio</th>
+            <th id="r1" class="r1">Dia</th>
+            <th id="r1" class="r1">Hora</th>
+            <th id="r1" class="r1">Editar / Eliminar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td id="r1" class="r1"><%= reserva.folio%></td>
+            <td id="r1" class="r1"><%= reserva.lab_r%></td>
+            <td id="r1" class="r1"><%= reserva.fech_r%></td>
+            <td id="r1" class="r1"><%= reserva.hor_r%></td>
+            <td><a href="/modificarReserva/<%= reserva.folio%>">Editar</a> /  <a href="/eliminar/<%= reserva.folio%>"> Eliminar</a></td>
+        </tr>
+    </tbody>
+</table>
+
+
+<%- include("templates/pie") %>

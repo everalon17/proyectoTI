@@ -1,0 +1,387 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+body{
+    margin: 0;
+}
+
+.fondo{
+    background-image: url(/web/imagenes/Fondo2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% auto;
+    height: 100vh;
+    color: #FFFFFF;
+}
+
+.logo{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.login{
+    margin-top: 70px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input{
+    border-radius: 10px;
+    display: flex;
+    width: 200px;
+    height: 20px; 
+}
+
+button{
+    margin-top: 15px;
+    border-radius: 6px;
+    width: 206px;
+    height: 25px;
+}
+
+
+/*INICIO*/
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav li a{
+    color: #000;
+    text-decoration: none;
+    padding: 4px;
+    margin-left: 5px;
+    display: block;
+}
+
+.nav li a:hover{
+    background-color: #f3e45b;
+}
+
+.nav > li{
+    float: left;
+    background-image: linear-gradient(to top, #92b5e9, #ffffff);
+}
+
+.nav li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.nav li:hover > ul{
+    display: block;
+    background-color: aqua;
+}
+
+ul, ol{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul{
+    list-style: none;
+}
+
+.carrusel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.imgCarrusel{
+    width: 100%;
+    height: auto;
+}
+
+/*RESERVA*/
+.nombreU{
+    background-color: darkcyan;
+    color: white;
+    width: 759px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.infoU{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.infoU1{
+    display: block;
+    margin-right: 40px;
+    margin-top: 2px;
+}
+
+.infoU2{
+    background-color: #dff0d8;
+    border-color: #d0e9c6;
+    color: #3c763d;
+    text-align: center;
+}
+
+label{
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.tabla1{
+    /*background-color: #3c763d;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+
+.lab{
+    display: table;
+    font-size: medium;
+    width: 90%;
+    text-align: center;
+    border: 1px solid #cecece;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid rgb(199, 199, 199);
+    padding: 8px;
+}
+
+th{
+    background-color: #CCCCCC;
+}
+
+td{
+    padding: 5px;
+}
+
+.separador{
+    background-color: #91a9c9;
+    display: flex;
+    margin-left: 65px;
+    margin-top: 50px;
+    margin-right: 65px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.contenedor{
+    margin-top: 20px;
+    margin-right: 65px;
+    margin-left: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.uno{
+    margin-left: 300px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 180px;
+}
+
+.img1{
+    padding-left: 12%;
+    margin-bottom: 10px;
+    height: 125px;
+}
+
+.dos{
+    margin-right: 300px;
+}
+
+.img2{
+    padding-left: 15%;
+    margin-bottom: 10px;
+    height: 125px;
+}
+
+.fondoOpaco {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+}
+
+.ventanaEmergente {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid #ccc;
+    padding: 20px;
+    z-index: 9999;
+}
+
+.cerrarBoton {
+    position: absolute;
+    cursor: pointer;
+    background-color: rgb(230, 93, 93);
+    border: none;
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+    font-size: medium;
+    font-style: none;
+    margin-left: 1050px;
+    margin-top: 450px;
+}
+
+.imgVentana1{
+    display: flex;
+}
+
+.imgV1{
+    display: flex;
+    height: 60px;
+    width: 300px;
+}
+
+.textoV1{
+    display: block;
+    height: 60px;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+.DTV1{
+    display: flex;
+    width: 1100px;
+    height: 400px;
+}
+
+.tablaVentana1{
+    display: table;
+    font-size: medium;
+    width: 90%;
+    text-align: center;
+    border: 1px solid #cecece;
+    border-collapse: collapse;
+    margin-left: 50px;
+}
+
+.img3{
+    height: 100px;
+}
+
+.botones{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    margin-top: 1px;
+    margin-bottom: 2px;
+}
+
+.btn2{
+    display: flex;
+    margin-left: 15px;
+    background-color: gray;
+}
+
+
+
+.botones2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn4{
+    display: flex;
+    background-color: #cc1616;
+    border-color: white solid #fff;
+    padding: 5px;
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    margin-top: 15px;
+    border-style: none;
+}
+
+.textoV1 h3{
+    margin-left: 70px;
+}
+
+.fooI{
+    display: block;
+    color: white;
+    padding: 5px;
+    background-image: linear-gradient(to right, #46acaf, #06555f);
+    margin-top: 10px;
+    font-size: small;
+    text-align: center;
+}
+
+.disponible{
+    color: green;
+}
+
+.reservado{
+    color: red;
+}
+
+.forma{
+    margin-top: 70px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.error{
+    color: red;
+}
+
+.errorInput{
+    border-color: red;
+}
